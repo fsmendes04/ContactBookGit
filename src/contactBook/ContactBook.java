@@ -18,6 +18,10 @@ public class ContactBook {
         return searchIndex(name) >= 0;
     }
 
+    public boolean hasPhoneNumber(int phone) {
+        return this.getName(phone) != null;
+    }
+
     public int getNumberOfContacts() {
         return counter;
     }
