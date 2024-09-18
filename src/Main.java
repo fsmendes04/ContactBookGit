@@ -128,6 +128,7 @@ public class Main {
     private static void getName(Scanner in, ContactBook cBook) {
         int number;
         number = in.nextInt();
+        in.nextLine();
         
         if(cBook.hasPhoneNumber(number)){
             System.out.println(cBook.getName(number));
@@ -172,10 +173,10 @@ public class Main {
 
     private static void equalNumbers(Scanner in, ContactBook cBook) {
         if (cBook.samePhoneNumber()) {
-            System.out.println(DIFFERENT_NUMBERS);
+            System.out.println(EQUAL_NUMBERS);
         }
         else {
-            System.out.println(EQUAL_NUMBERS);
+            System.out.println(DIFFERENT_NUMBERS);
         }
     }
 }
